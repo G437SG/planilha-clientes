@@ -3,7 +3,7 @@ name: Build macOS App
 on:
   push:
     branches: [ main ]
-  workflow_dispatch:  # Permite executar o workflow manualmente
+  workflow_dispatch:
 
 jobs:
   build:
@@ -30,7 +30,7 @@ jobs:
     - name: Zip application
       run: |
         cd dist
-        zip -r "Formulario-Projeto-Arquitetonico.zip" "Formulário de Projeto Arquitetônico.app"
+        zip -r "Formulario-Projeto-Arquitetonico.zip" *.app
         
     - name: Upload compiled application
       uses: actions/upload-artifact@v2
