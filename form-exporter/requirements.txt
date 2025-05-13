@@ -1,0 +1,6 @@
+fpdf
+openpyxl
+Pillow
+tkinter
+setuptools
+py2app
